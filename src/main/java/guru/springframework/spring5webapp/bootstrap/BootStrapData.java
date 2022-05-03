@@ -54,5 +54,7 @@ public class BootStrapData implements CommandLineRunner {
         for (Publisher p: publisherRepository.findAll()){
             System.out.println(p);
         }
+
+        System.out.println(publisherRepository.count());
     }
 }
